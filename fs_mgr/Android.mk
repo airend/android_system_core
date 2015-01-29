@@ -10,7 +10,9 @@ common_static_libraries := \
     libmincrypt \
     libcrypto_static \
     libext4_utils_static \
-    libsquashfs_utils
+    libsquashfs_utils \
+    libext2_blkid \
+    libext2_uuid
 
 include $(CLEAR_VARS)
 LOCAL_CLANG := true
@@ -25,6 +27,7 @@ LOCAL_C_INCLUDES := \
     $(LOCAL_PATH)/include \
     system/vold \
     system/extras/ext4_utils \
+    external/e2fsprogs/lib \
     external/openssl/include \
     bootable/recovery
 LOCAL_MODULE:= libfs_mgr
