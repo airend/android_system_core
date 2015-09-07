@@ -72,6 +72,7 @@ struct fstab_rec {
     int partnum;
     int swap_prio;
     unsigned int zram_size;
+    unsigned int zram_streams;
     unsigned int file_encryption_mode;
 };
 
