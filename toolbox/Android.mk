@@ -52,7 +52,6 @@ LOCAL_SRC_FILES := \
     $(patsubst %,%.c,$(OUR_TOOLS)) \
 
 LOCAL_CFLAGS += $(common_cflags)
-LOCAL_CONLYFLAGS += -std=gnu99
 
 LOCAL_SHARED_LIBRARIES := \
     libcutils \

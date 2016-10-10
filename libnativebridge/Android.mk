@@ -14,7 +14,7 @@ LOCAL_SHARED_LIBRARIES := liblog
 LOCAL_CLANG := true
 LOCAL_CPP_EXTENSION := .cc
 LOCAL_CFLAGS += -Werror -Wall
-LOCAL_CPPFLAGS := -std=gnu++11 -fvisibility=protected
+LOCAL_CPPFLAGS := -fvisibility=protected
 LOCAL_LDFLAGS := -ldl
 LOCAL_MULTILIB := both
 
@@ -31,7 +31,7 @@ LOCAL_SHARED_LIBRARIES := liblog
 LOCAL_CLANG := true
 LOCAL_CPP_EXTENSION := .cc
 LOCAL_CFLAGS += -Werror -Wall
-LOCAL_CPPFLAGS := -std=gnu++11 -fvisibility=protected
+LOCAL_CPPFLAGS := -fvisibility=protected
 LOCAL_LDFLAGS := -ldl
 LOCAL_MULTILIB := both
 
@@ -48,7 +48,7 @@ LOCAL_STATIC_LIBRARIES := liblog
 LOCAL_CLANG := true
 LOCAL_CPP_EXTENSION := .cc
 LOCAL_CFLAGS += -Werror -Wall
-LOCAL_CPPFLAGS := -std=gnu++11 -fvisibility=protected
+LOCAL_CPPFLAGS := -fvisibility=protected
 LOCAL_LDFLAGS := -ldl
 LOCAL_MULTILIB := both
 

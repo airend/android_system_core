@@ -23,7 +23,7 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE := libmemunreachable
 LOCAL_SRC_FILES := $(memunreachable_srcs)
-LOCAL_CFLAGS := -std=c++14 -Wall -Wextra -Werror
+LOCAL_CFLAGS := -Wall -Wextra -Werror
 LOCAL_SHARED_LIBRARIES := libbase liblog
 LOCAL_STATIC_LIBRARIES := libc_malloc_debug_backtrace libc_logging
 # Only need this for arm since libc++ uses its own unwind code that
@@ -39,7 +39,7 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE := memunreachable_test
 LOCAL_SRC_FILES := $(memunreachable_test_srcs)
-LOCAL_CFLAGS := -std=c++14 -Wall -Wextra -Werror
+LOCAL_CFLAGS := -Wall -Wextra -Werror
 LOCAL_CLANG := true
 LOCAL_SHARED_LIBRARIES := libmemunreachable libbase liblog
 
@@ -57,7 +57,7 @@ LOCAL_SRC_FILES := \
    tests/HostMallocStub.cpp \
    tests/LeakFolding_test.cpp \
 
-LOCAL_CFLAGS := -std=c++14 -Wall -Wextra -Werror
+LOCAL_CFLAGS := -Wall -Wextra -Werror
 LOCAL_CLANG := true
 LOCAL_SHARED_LIBRARIES := libbase liblog
 LOCAL_MODULE_HOST_OS := linux

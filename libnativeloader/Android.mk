@@ -16,7 +16,7 @@ LOCAL_SHARED_LIBRARIES := libnativehelper liblog libcutils
 LOCAL_STATIC_LIBRARIES := libbase
 LOCAL_CLANG := true
 LOCAL_CFLAGS := $(native_loader_common_cflags)
-LOCAL_CPPFLAGS := -std=gnu++14 -fvisibility=hidden
+LOCAL_CPPFLAGS := -fvisibility=hidden
 LOCAL_LDFLAGS := -ldl
 LOCAL_MULTILIB := both
 LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)/include
@@ -34,7 +34,7 @@ LOCAL_SHARED_LIBRARIES := libnativehelper liblog libcutils
 LOCAL_STATIC_LIBRARIES := libbase
 LOCAL_CLANG := true
 LOCAL_CFLAGS := $(native_loader_common_cflags)
-LOCAL_CPPFLAGS := -std=gnu++14 -fvisibility=hidden
+LOCAL_CPPFLAGS := -fvisibility=hidden
 LOCAL_LDFLAGS := -ldl
 LOCAL_MULTILIB := both
 LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)/include
@@ -51,7 +51,7 @@ LOCAL_SRC_FILES:= $(native_loader_common_src_files)
 LOCAL_STATIC_LIBRARIES := libnativehelper libcutils liblog libbase
 LOCAL_CLANG := true
 LOCAL_CFLAGS := $(native_loader_common_cflags)
-LOCAL_CPPFLAGS := -std=gnu++14 -fvisibility=hidden
+LOCAL_CPPFLAGS := -fvisibility=hidden
 LOCAL_LDFLAGS := -ldl
 LOCAL_MULTILIB := both
 LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)/include

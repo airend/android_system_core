@@ -19,7 +19,7 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 LOCAL_MODULE := libcrypto_utils
 LOCAL_SRC_FILES := android_pubkey.c
-LOCAL_CFLAGS := -Wall -Werror -Wextra -std=c99
+LOCAL_CFLAGS := -Wall -Werror -Wextra
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/include
 LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)/include
 LOCAL_SHARED_LIBRARIES := libcrypto
@@ -28,7 +28,7 @@ include $(BUILD_SHARED_LIBRARY)
 include $(CLEAR_VARS)
 LOCAL_MODULE := libcrypto_utils
 LOCAL_SRC_FILES := android_pubkey.c
-LOCAL_CFLAGS := -Wall -Werror -Wextra -std=c99
+LOCAL_CFLAGS := -Wall -Werror -Wextra
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/include
 LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)/include
 LOCAL_SHARED_LIBRARIES := libcrypto-host
@@ -37,7 +37,7 @@ include $(BUILD_HOST_SHARED_LIBRARY)
 include $(CLEAR_VARS)
 LOCAL_MODULE := libcrypto_utils_static
 LOCAL_SRC_FILES := android_pubkey.c
-LOCAL_CFLAGS := -Wall -Werror -Wextra -std=c99
+LOCAL_CFLAGS := -Wall -Werror -Wextra
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/include
 LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)/include
 LOCAL_STATIC_LIBRARIES := libcrypto_static
@@ -47,7 +47,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := libcrypto_utils_static
 LOCAL_MODULE_HOST_OS := darwin linux windows
 LOCAL_SRC_FILES := android_pubkey.c
-LOCAL_CFLAGS := -Wall -Werror -Wextra -std=c99
+LOCAL_CFLAGS := -Wall -Werror -Wextra
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/include
 LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)/include
 LOCAL_STATIC_LIBRARIES := libcrypto_static
