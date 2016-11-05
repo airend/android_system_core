@@ -9,6 +9,8 @@ LOCAL_SRC_FILES := $(LOCAL_MODULE)
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH := $(TARGET_ROOT_OUT)
 
+LOCAL_POST_INSTALL_CMD := $(hide) cp $(LOCAL_PATH)/init.io.rc $(TARGET_ROOT_OUT)
+
 include $(BUILD_PREBUILT)
 
 #######################################
