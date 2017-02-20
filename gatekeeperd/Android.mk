@@ -18,7 +18,6 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 LOCAL_CFLAGS := -Wall -Wextra -Werror -Wunused
-LOCAL_CFLAGS += -Wno-address-of-packed-member
 LOCAL_SRC_FILES := \
 	SoftGateKeeperDevice.cpp \
 	IGateKeeperService.cpp \
