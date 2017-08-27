@@ -25,6 +25,7 @@ struct autosuspend_ops {
 };
 
 __BEGIN_DECLS
+struct autosuspend_ops *autosuspend_earlysuspend_init(void);
 struct autosuspend_ops *autosuspend_wakeup_count_init(void);
 __END_DECLS
 
