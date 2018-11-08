@@ -57,10 +57,6 @@ __BEGIN_DECLS
 
 // ---------------------------------------------------------------------------
 
-typedef const native_handle_t* buffer_handle_t;
-
-// ---------------------------------------------------------------------------
-
 typedef struct android_native_rect_t
 {
     int32_t left;

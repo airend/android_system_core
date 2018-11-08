@@ -29,6 +29,8 @@ typedef struct native_handle
     int data[0];        /* numFds + numInts ints */
 } native_handle_t;
 
+typedef const native_handle_t* buffer_handle_t;
+
 /*
  * native_handle_close
  * 
